@@ -1,0 +1,85 @@
+/*Global Stil*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  background: rgb(238, 239, 255);
+   
+}
+h1{
+  font-size: 4rem;
+}
+h2{
+  font-size: 3rem;
+
+}
+h3{
+  font-size: 2.5rem;
+
+}
+ul{
+  font-size: 2rem;
+}
+li{
+  line-height: 4rem;
+}
+ol{
+  font-size: 2rem;
+}
+p{
+  font-size:2rem;
+  line-height:3.3rem;
+}
+
+
+
+nav ul {
+  background:  #FFDE08;
+  display: flex;
+  list-style: none;
+  gap: 10rem;
+}
+nav ul li {
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+nav ul li:hover {
+  cursor: pointer;
+
+  background: rgb(255, 255, 255);
+}
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: rgb(40, 30, 134);
+}
+
+
+
+.report{
+  width: 70%;
+  margin: auto;
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background: white;
+  min-height:100vh ;
+  box-shadow: 0 0 5rem rgb(163, 163, 163);
+}.report h1{
+ 
+  margin: 2rem 0;
+ 
+}
+ 
