@@ -121,6 +121,25 @@ margin: 4rem 0;
  object-fit: cover;
 }
 
+
+
+/* Pexon Bilder */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 2rem 0rem;
+  column-gap: 2rem;
+  row-gap: 4rem;
+  width: 80%;
+  margin: auto;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+ border: 1px solid gray;
+}
 /* Media Queries*/
 @media screen and (max-width:769px ) {
  html{

@@ -121,6 +121,22 @@ main {
   height: 100%;
 }
 
+#gallery {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 4rem 2rem;
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+  display: grid;
+}
+
+.gallery-img img {
+  border: 1px solid gray;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
 @media screen and (width <= 769px) {
   html {
     font-size: 50%;
