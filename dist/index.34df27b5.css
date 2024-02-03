@@ -25,15 +25,7 @@ h3 {
   font-size: 2.5rem;
 }
 
-ul {
-  font-size: 2rem;
-}
-
-li {
-  line-height: 4rem;
-}
-
-ol {
+ul, ol {
   font-size: 2rem;
 }
 
@@ -44,7 +36,8 @@ p {
 
 nav ul {
   background: #ffde08;
-  gap: 10rem;
+  flex-direction: column;
+  gap: 2rem;
   list-style: none;
   display: flex;
 }
@@ -84,12 +77,27 @@ main {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  width: 70%;
+  width: 80%;
   min-height: 100vh;
   margin: auto;
   padding: 2rem 6rem;
   display: flex;
   box-shadow: 0 0 5rem #a3a3a3;
+}
+
+.report {
+  width: 100%;
+}
+
+.report ul li {
+  padding: .6rem 1rem;
+  line-height: 4rem;
+  list-style: disc;
+}
+
+.report ol li {
+  padding: .6rem 1rem;
+  line-height: 4rem;
 }
 
 .report h1 {
@@ -106,8 +114,8 @@ main {
 }
 
 .images {
-  background: #fda3a3;
-  border-radius: 1rem;
+  background: #281e8636;
+  border-radius: .6rem;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin: 0 auto;
@@ -145,24 +153,37 @@ main {
   main {
     border: none;
     width: 100%;
-    padding: 1rem;
-  }
-
-  nav ul {
-    background: #ffde08;
-    flex-direction: column;
-    gap: 2rem;
-    display: flex;
+    padding: 2rem 3rem;
   }
 
   .images {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  #gallery {
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 4rem .4rem;
+    width: 100%;
+    margin: auto;
+    padding: 2rem 0;
+    display: grid;
+  }
+
+  .gallery-img img {
+    width: 100px;
   }
 }
 
 @media screen and (width >= 992px) {
   .images {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav ul {
+    background: #ffde08;
+    flex-direction: row;
+    gap: 2rem;
+    display: flex;
   }
 }
 
