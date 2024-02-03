@@ -67,7 +67,17 @@ nav a {
   text-decoration: none;
 }
 
-.report {
+.personal-information {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+}
+
+.personal-information-left {
+  flex: .9;
+}
+
+main {
   background: #fff;
   border-left: 1px solid #000;
   border-right: 1px solid #000;
@@ -84,6 +94,66 @@ nav a {
 
 .report h1 {
   margin: 2rem 0;
+}
+
+.pictures-container {
+  width: 100%;
+  display: flex;
+}
+
+.pictures-container h1 {
+  margin: 4rem 0;
+}
+
+.images {
+  background: #fda3a3;
+  border-radius: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+}
+
+.images img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (width <= 769px) {
+  html {
+    font-size: 50%;
+  }
+
+  main {
+    border: none;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  nav ul {
+    background: #ffde08;
+    flex-direction: column;
+    gap: 2rem;
+    display: flex;
+  }
+
+  .images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (width >= 992px) {
+  .images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .images {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 /*# sourceMappingURL=index.34df27b5.css.map */
