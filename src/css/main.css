@@ -71,7 +71,7 @@ main {
   width: 80%;
   margin: auto;
   
-  padding: 2rem 6rem;
+  padding: 2rem 8rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -84,6 +84,7 @@ main {
 }
 .report{
   width: 100%;
+  padding-bottom: 10rem;
 }
 .report ul li{
   line-height: 4rem;
@@ -147,7 +148,7 @@ main {
   }
   main {
     width: 100%;
-    padding: 2rem 3rem;
+    padding: 2rem 4rem;
     border: none;
   }
   .personal-information {

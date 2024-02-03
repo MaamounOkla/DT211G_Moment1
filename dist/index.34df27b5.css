@@ -81,13 +81,14 @@ main {
   width: 80%;
   min-height: 100vh;
   margin: auto;
-  padding: 2rem 6rem;
+  padding: 2rem 8rem;
   display: flex;
   box-shadow: 0 0 5rem #a3a3a3;
 }
 
 .report {
   width: 100%;
+  padding-bottom: 10rem;
 }
 
 .report ul li {
@@ -154,7 +155,7 @@ main {
   main {
     border: none;
     width: 100%;
-    padding: 2rem 3rem;
+    padding: 2rem 4rem;
   }
 
   .personal-information {
