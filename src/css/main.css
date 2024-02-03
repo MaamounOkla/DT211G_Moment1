@@ -4,43 +4,38 @@
   margin: 0;
   padding: 0;
 }
-html{
+html {
   font-size: 62.5%;
 }
 body {
   font-family: sans-serif;
   background: rgb(238, 239, 255);
-   
 }
-h1{
+h1 {
   font-size: 4rem;
 }
-h2{
+h2 {
   font-size: 3rem;
-
 }
-h3{
+h3 {
   font-size: 2.5rem;
-
 }
-ul{
+ul {
   font-size: 2rem;
 }
-li{
+li {
   line-height: 4rem;
 }
-ol{
+ol {
   font-size: 2rem;
 }
-p{
-  font-size:2rem;
-  line-height:3.3rem;
+p {
+  font-size: 2rem;
+  line-height: 3.3rem;
 }
 
-
-
 nav ul {
-  background:  #FFDE08;
+  background: #ffde08;
   display: flex;
   list-style: none;
   gap: 10rem;
@@ -62,19 +57,17 @@ nav a {
   color: rgb(40, 30, 134);
 }
 
-.personal-information{
+.personal-information {
   display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-   
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.personal-information-left{
- flex: 0.9;
-  
+.personal-information-left {
+  flex: 0.9;
 }
 
-main{
+main {
   width: 70%;
   margin: auto;
   padding: 2rem 6rem;
@@ -85,43 +78,36 @@ main{
   border-left: 1px solid black;
   border-right: 1px solid black;
   background: white;
-  min-height:100vh ;
+  min-height: 100vh;
   box-shadow: 0 0 5rem rgb(163, 163, 163);
-}.report h1{
- 
-  margin: 2rem 0;
- 
 }
- 
-
-
+.report h1 {
+  margin: 2rem 0;
+}
 
 /*Pictures Page*/
 
-.pictures-container{
+.pictures-container {
   display: flex;
   width: 100%;
 }
-.pictures-container h1{
-margin: 4rem 0;
+.pictures-container h1 {
+  margin: 4rem 0;
 }
-.images{
+.images {
   background: rgb(253, 163, 163);
-   border-radius: 1rem;
-   padding: 2rem;
+  border-radius: 1rem;
+  padding: 2rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
-.images img{
- 
- width: 100%;
- height: 100%;
- object-fit: cover;
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-
 
 /* Pexon Bilder */
 #gallery {
@@ -138,38 +124,35 @@ margin: 4rem 0;
   width: 100%;
   height: 100%;
   padding: 2px;
- border: 1px solid gray;
+  border: 1px solid gray;
 }
 /* Media Queries*/
-@media screen and (max-width:769px ) {
- html{
-  font-size: 50%;
- }
- main{
-  width: 100%;
-  padding: 1rem;
-  border: none;
- }
- nav ul {
-  background:  #FFDE08;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.images{
-  
-   grid-template-columns: repeat(1, 1fr); 
-}
-}@media screen and (min-width:992px ) {
-   
- .images{
-  
-    grid-template-columns: repeat(3, 1fr); 
- }
- }@media screen and (min-width:1200px ) {
-   
-  .images{
-   
-     grid-template-columns: repeat(5, 1fr); 
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 50%;
   }
+  main {
+    width: 100%;
+    padding: 1rem;
+    border: none;
   }
+  nav ul {
+    background: #ffde08;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .images {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
